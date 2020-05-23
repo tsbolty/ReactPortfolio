@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Productivity List",
+        "deployed_link": "https://smtmarie.github.io/Project-1/",
+        "github_repo": "https://github.com/smtmarie/Project-1",
+        "image": "../../public/images/todo.png",
+        "id": 1
+    },
+    {
+        "title": "Work Day Scheduler",
+        "deployed_link": "https://tsbolty.github.io/Day-Planner/",
+        "github_repo": "https://github.com/tsbolty/Day-Planner",
+        "image": "../../public/images/work-day-scheduler.png",
+        "id": 2
+    },
+    {
+        "title": "Random Password Generator",
+        "deployed_link": "https://tsbolty.github.io/Random-Password-Generator/",
+        "github_repo": "https://github.com/tsbolty/Random-Password-Generator",
+        "image": "../../public/images/random-password-generator.png",
+        "id": 3
+    },
+    {
+        "title": "Sell Yo Stuff",
+        "deployed_link": "https://sheltered-woodland-38218.herokuapp.com/",
+        "github_repo": "https://github.com/tsbolty/Sell-yo-stuff",
+        "image": "../../public/images/sellyostuff.png",
+        "id": 4
+    },
+    {
+        "title": "Employee Roster Template",
+        "deployed_link": "",
+        "github_repo": "https://github.com/tsbolty/Employee-Roster-Template",
+        "image": "../../public/images/employee-roster-template.png",
+        "id": 5
+    },
+    {
+        "title": "",
+        "deployed_link": "",
+        "github_repo": "",
+        "image": "",
+        "id": 6
+    }
+]

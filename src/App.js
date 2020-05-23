@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import CardContext from "./components/CardContext"
+import Repos from "./utils/Repos"
+import Card from "./components/Card"
+
+
 
 function App() {
+
+  const [card, setCard] = useState({
+    title: "",
+    deployed_link: "",
+    github_repo: "",
+    image: ""
+  })
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {Repos.map(repos=>{
+        return <Card title= {repos.title} github_repo= {repos.github_repo} deployed_link={repos.deployed_link} image={repos.image} key={repos.id}/>
+      })}
+    </>
   );
 }
 
