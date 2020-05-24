@@ -17,7 +17,12 @@ function Card(){
                         </div>
                         <div className="row">
                             <div className="col-lg-6 col-md-6">
-                            {Repos.map(project=>{
+                            {Repos.slice(0, 3).map(project=>{
+                                return <CardContent title= {project.title} github_repo= {project.github_repo} deployed_link={project.deployed_link} image={project.image} key={project.id}/>
+                            })}
+                            </div>
+                            <div className="col-lg-6 col-md-6">
+                            {Repos.slice(3).map(project=>{
                                 return <CardContent title= {project.title} github_repo= {project.github_repo} deployed_link={project.deployed_link} image={project.image} key={project.id}/>
                             })}
                             </div>

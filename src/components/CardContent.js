@@ -7,6 +7,7 @@ function CardContent(props){
             <div className="card-body">
                 <h3>{props.title}</h3>
                 <a href= {props.deployed_link} className= "site-link">Deployed Site</a>
+                <br></br>
                 <a href= {props.github_repo} >Github Repo</a>
             </div>
         </div>
