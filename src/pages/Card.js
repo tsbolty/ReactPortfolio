@@ -1,7 +1,6 @@
 import React from "react";
-import Repos from "../utils/Repos"
+import Projects from "../utils/Projects"
 import CardContent from "../components/CardContent"
-import Col from "../components/Col"
 
 
 function Card(){
@@ -17,12 +16,14 @@ function Card(){
                         </div>
                         <div className="row">
                             <div className="col-lg-6 col-md-6">
-                            {Repos.slice(0, 3).map(project=>{
+                            {/* Mapping through first 3 projects */}
+                            {Projects.slice(0, 3).map(project=>{
                                 return <CardContent title= {project.title} github_repo= {project.github_repo} deployed_link={project.deployed_link} image={project.image} key={project.id}/>
                             })}
                             </div>
                             <div className="col-lg-6 col-md-6">
-                            {Repos.slice(3).map(project=>{
+                            {/* Mapping through last 2 projects to fix column issue */}
+                            {Projects.slice(3).map(project=>{
                                 return <CardContent title= {project.title} github_repo= {project.github_repo} deployed_link={project.deployed_link} image={project.image} key={project.id}/>
                             })}
                             </div>
