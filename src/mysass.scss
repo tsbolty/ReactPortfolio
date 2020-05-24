@@ -1,0 +1,82 @@
+
+.card-body{
+    /* text-align: center;
+    background-color: #ACB4B4; */
+    font-family: "orbitron";
+    font-size: 2em;
+    border: 0;
+}
+
+.card{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-form{
+    background-color: lightgrey;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+#footer{
+    font-size: .7em;
+    text-align: center;
+    width: 100%;
+    background: darkgray;
+}
+
+
+
+img{
+    height:200px;
+    width: 200px;
+    float: left;
+}
+
+.main-content{
+    background-color: lightgrey;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.site-link{
+    font-size: 1em;
+}
+
+.nav{
+    padding: 10px;
+    font-size: 2em;
+    position: relative;
+    font-size: 2em;
+    flex-wrap: nowrap;
+}
+
+h1{
+    font-size: 1.5em;
+    flex-wrap: nowrap;
+    width: 180px;
+    text-align: center;
+    font-family: "orbitron";
+}
+
+.nav-link{
+    color: #2E4053;
+}
+
+p{
+    margin: 40px auto;
+}
+
+@media screen and (max-width:576px){
+
+}
+    
+
+@media screen and (max-width:720px){
+  
+}
+
+@media screen and (max-width:992px){
+   
+}

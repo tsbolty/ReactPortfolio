@@ -1,28 +1,26 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import './App.css';
-import CardContext from "./components/CardContext"
-import Repos from "./utils/Repos"
-import Card from "./components/Card"
+import Card from "./pages/Card"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
 
 
 
 function App() {
 
-  const [card, setCard] = useState({
-    title: "",
-    deployed_link: "",
-    github_repo: "",
-    image: ""
-  })
-
-
-
   return (
-    <>
-      {Repos.map(repos=>{
-        return <Card title= {repos.title} github_repo= {repos.github_repo} deployed_link={repos.deployed_link} image={repos.image} key={repos.id}/>
-      })}
-    </>
+    <Router>
+      <div className= "container">
+        <Navbar />
+        <Route exact path= "/portfolio" component={Card}/>
+        <Route exact path= "/contact" component={Contact} />
+        <Route exact path= "/" component= {About} />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
