@@ -1,4 +1,4 @@
-import React, { Link } from "react"
+import React from "react"
 import Row from "./Row"
 
 function Navbar(){
@@ -11,10 +11,10 @@ function Navbar(){
           <nav className="col-lg-5 offset-lg-4 col-md-5 offset-md-4 col-sm-12">
             <ul className="nav justify-content-center">
                 <li className="nav-item">
-                  <Link to="/" className="nav-link active">About</Link>
+                  <a className="nav-link active" href="/">About</a>
                 </li>
                 <li className="nav-item">
-                  <Link to="/contact" className="nav-link">Contact</Link>
+                  <a className="nav-link" href="/contact">Contact</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/portfolio">Portfolio</a>
