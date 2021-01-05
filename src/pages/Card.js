@@ -2,7 +2,6 @@ import React from "react";
 import Projects from "../utils/Projects"
 import CardContent from "../components/CardContent"
 
-
 function Card(){
     return(
         <>
